@@ -16,7 +16,7 @@
   <b><a href="#english">English</a></b>
 </p>
 
-**Poklio** — приложение для ридеров PocketBook. Подключите свою библиотеку, найдите книгу, получите её на ридер и читайте в привычной читалке — без компьютера и проводов.
+**Poklio** — приложение для ридеров PocketBook. Подключите свою библиотеку, найдите книгу, получите её на ридер по Wi-Fi и читайте в привычной читалке. Компьютер нужен только один раз — чтобы установить Poklio.
 
 <p align="center">
   <img src="images/demo.gif" alt="Как выглядит Poklio" width="420">
@@ -30,7 +30,7 @@
 - **Вход с телефона.** Отсканируйте QR-код — пароль вводится на телефоне, а не на ридере.
 - **Удобно на E Ink.** Крупные кнопки, листание физическими кнопками, цветная тема на Era Color.
 - **Русский и английский** интерфейс.
-- **Сам обновляется.** Poklio подскажет, когда выйдет новая версия, и обновится по вашей команде.
+- **Обновления по Wi-Fi.** Poklio подскажет, когда выйдет новая версия, и обновится, когда вы нажмёте «Обновить».
 
 <p align="center">
   <img src="images/screens.png" alt="Мои книги, карточка книги и вход с телефона" width="100%">
@@ -42,7 +42,7 @@
 | Библиотека | |
 |---|---|
 | Яндекс Книги | Работает (экспериментально) |
-| Литрес, WB Книги и другие | В планах |
+| Литрес, WB Книги и другие | Может появиться позже |
 
 Poklio проверен на **PocketBook 700 Era Color**. На других моделях PocketBook он может работать, но пока не проверялся — напишите, если попробуете.
 
@@ -52,7 +52,7 @@ Poklio проверен на **PocketBook 700 Era Color**. На других м�
 2. Переименуйте его в **`poklio.app`**.
 3. Подключите ридер к компьютеру кабелем и скопируйте файл в папку **`applications`** на ридере.
 
-Отключите кабель — Poklio появится в разделе «Приложения». Дальше он обновляется сам.
+Отключите кабель — Poklio появится в разделе «Приложения». Следующие версии ставятся по Wi-Fi, без компьютера.
 
 <details>
 <summary>Если у вас Mac</summary>
@@ -106,7 +106,7 @@ cp -X ~/Downloads/poklio.app /Volumes/PB700K3/applications/
 
 Раз в сутки, если есть Wi-Fi, Poklio проверяет, вышла ли новая версия. Когда она есть, в меню появится «Доступна версия…» — нажмите «Обновить», затем закройте и снова откройте Poklio. Книги, вход и настройки сохраняются. Без вашего нажатия ничего не скачивается. Автопроверку можно выключить в настройках.
 
-Каждая версия подписана автором Poklio: поддельный файл ридер не установит.
+Каждая версия подписана автором Poklio: файл без верной подписи ридер не установит.
 
 ## Вопросы и ответы
 
@@ -162,13 +162,13 @@ Poklio бесплатен для личного использования на 
   <img src="images/screen-en.png" alt="Poklio in English" width="300">
 </p>
 
-**Poklio** is an app for PocketBook e-readers: connect your library, find a book, get it onto your reader and read it in the built-in reader app — no computer or cables needed.
+**Poklio** is an app for PocketBook e-readers: connect your library, find a book, get it onto your reader over Wi-Fi and read it in the built-in reader app. You only need a computer once, to install Poklio.
 
 - **Your books on your reader** — your Yandex Books library with covers (experimental).
 - **Catalog search** — find a book and add it to My books right on the reader.
 - **Sign in with your phone** — scan a QR code; your password never reaches the reader.
 - **Made for E Ink** — big buttons, page-turn keys, color theme on Era Color.
-- **Updates itself** — when a new version is out, Poklio asks before installing it.
+- **Updates over Wi-Fi** — when a new version is out, Poklio installs it only after you tap Update.
 
 **Install:** download `poklio.app.bin` from the [latest release](https://github.com/ArkHak/poklio/releases/latest), rename it to `poklio.app` and copy it into the `applications` folder on your reader over USB.
 
