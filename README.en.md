@@ -98,6 +98,68 @@ If the extra item is already there, delete `applications/._poklio.app` from the 
 </details>
 
 <details>
+<summary><b>Poklio icon in the menu (optional)</b></summary>
+
+Without this setup, Poklio shows up in the Applications menu with the standard placeholder icon, like any third-party app. The firmware only takes custom icons from its own system menu file, and Poklio doesn't change system files. So you can add the icon by hand if you're comfortable carefully editing one text file.
+
+> **Important.** A mistake in this file can break the Applications menu. Make a backup first (step 1) so you can undo everything in a minute. Tested on PocketBook 700 Era Color, firmware U700k3.6.10.2359; other firmware versions may lay out the file differently.
+
+**1. Make a backup.** Connect the reader over USB and copy two files from the reader's `system/config/desktop/` folder to your computer: `view.json` and `hash.txt`.
+
+**2. Add the icons.** Download [poklio.bmp](https://github.com/ArkHak/poklio/raw/main/icons/poklio.bmp) and [poklio_f.bmp](https://github.com/ArkHak/poklio/raw/main/icons/poklio_f.bmp) (the second one is shown when pressed). On the reader, create an `icons` folder inside `applications` and put both files there.
+
+**3. Open `system/config/desktop/view.json`** in a plain text editor: VS Code, Notepad++, Notepad, or TextEdit in plain text mode. Word and similar apps won't work.
+
+**4. Describe Poklio.** Near the top of the file, find the line `"applications": {`. Paste this block right below it — note the comma at the end:
+
+```json
+        "U_poklio": {
+            "path": "/mnt/ext1/applications/poklio.app",
+            "title": "Poklio",
+            "icon": "/mnt/ext1/applications/icons/poklio.bmp",
+            "focused_icon": "/mnt/ext1/applications/icons/poklio_f.bmp"
+        },
+```
+
+It should look like this:
+
+```json
+    "applications": {
+        "U_poklio": {
+            "path": "/mnt/ext1/applications/poklio.app",
+            "title": "Poklio",
+            "icon": "/mnt/ext1/applications/icons/poklio.bmp",
+            "focused_icon": "/mnt/ext1/applications/icons/poklio_f.bmp"
+        },
+        "_comment": [
+            ...
+```
+
+**5. Add Poklio to the menu.** Further down, in the `"view"` section, find the group with `"title": "@General"` and its `"apps"` list. Add a comma after the last item and append `"U_poklio"`:
+
+```json
+                "apps": [
+                    "PB_AudioBooks",
+                    ...
+                    "PB_Settings",
+                    "U_poklio"
+                ]
+```
+
+**6. Save the file** (UTF-8) and double-check the details: all quotes are straight `"`, and there are commas between items but not after the last one. Don't change `hash.txt` — the firmware updates it itself.
+
+**7. Disconnect the reader.** The icon appears in the Applications menu. If it doesn't, restart the reader.
+
+**On a Mac,** if Finder added hidden helper files, delete them, or an extra item may show up in the menu:
+
+```bash
+rm /Volumes/PB700K3/applications/icons/._*
+```
+
+**If something goes wrong** (the menu won't open, apps are missing, or Poklio won't start), connect the reader, put back `view.json` and `hash.txt` from your backup, and restart the reader.
+</details>
+
+<details>
 <summary><b>Backup sign-in, using a computer</b></summary>
 
 1. On your computer, open [this link](https://oauth.yandex.ru/authorize?response_type=token&client_id=4483e97bab6e486a9822973109a14d05) and sign in to Yandex.

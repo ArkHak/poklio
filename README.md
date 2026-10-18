@@ -98,6 +98,68 @@ cp -X ~/Downloads/poklio.app /Volumes/PB700K3/applications/
 </details>
 
 <details>
+<summary><b>Иконка Poklio в меню — по желанию</b></summary>
+
+Без этой настройки Poklio показывается в меню приложений со стандартной заглушкой — как любое стороннее приложение. Свою иконку прошивка берёт только из системного файла меню, а Poklio системные файлы не меняет. Поэтому иконку можно поставить вручную, если вы готовы аккуратно поправить один текстовый файл.
+
+> **Важно.** Ошибка в этом файле может сломать меню приложений. Обязательно сделайте копию (шаг 1) — тогда всё можно вернуть за минуту. Проверено на PocketBook 700 Era Color, прошивка U700k3.6.10.2359; на других прошивках файл может быть устроен иначе.
+
+**1. Сделайте копию.** Подключите ридер кабелем и скопируйте на компьютер два файла из папки `system/config/desktop/` на ридере: `view.json` и `hash.txt`.
+
+**2. Положите иконки.** Скачайте [poklio.bmp](https://github.com/ArkHak/poklio/raw/main/icons/poklio.bmp) и [poklio_f.bmp](https://github.com/ArkHak/poklio/raw/main/icons/poklio_f.bmp) (вторая показывается при нажатии). На ридере в папке `applications` создайте папку `icons` и положите туда оба файла.
+
+**3. Откройте `system/config/desktop/view.json`** в простом текстовом редакторе: VS Code, Notepad++, «Блокнот» или TextEdit в режиме «Простой текст». Word и похожие программы не подходят.
+
+**4. Добавьте описание Poklio.** Найдите в начале файла строку `"applications": {`. Сразу под ней вставьте этот блок — обратите внимание на запятую в конце:
+
+```json
+        "U_poklio": {
+            "path": "/mnt/ext1/applications/poklio.app",
+            "title": "Poklio",
+            "icon": "/mnt/ext1/applications/icons/poklio.bmp",
+            "focused_icon": "/mnt/ext1/applications/icons/poklio_f.bmp"
+        },
+```
+
+Должно получиться так:
+
+```json
+    "applications": {
+        "U_poklio": {
+            "path": "/mnt/ext1/applications/poklio.app",
+            "title": "Poklio",
+            "icon": "/mnt/ext1/applications/icons/poklio.bmp",
+            "focused_icon": "/mnt/ext1/applications/icons/poklio_f.bmp"
+        },
+        "_comment": [
+            ...
+```
+
+**5. Добавьте Poklio в меню.** Ниже, в разделе `"view"`, найдите группу `"title": "@General"` и её список `"apps"`. Поставьте запятую после последнего элемента списка и допишите `"U_poklio"`:
+
+```json
+                "apps": [
+                    "PB_AudioBooks",
+                    ...
+                    "PB_Settings",
+                    "U_poklio"
+                ]
+```
+
+**6. Сохраните файл** (кодировка UTF-8) и проверьте мелочи: все кавычки прямые `"`, запятые стоят между элементами, но не после последнего. Файл `hash.txt` не меняйте — прошивка обновит его сама.
+
+**7. Отключите ридер.** Иконка появится в меню приложений. Если нет — перезагрузите ридер.
+
+**Если на Mac** Finder добавил служебные файлы, удалите их, иначе в меню может появиться лишний пункт:
+
+```bash
+rm /Volumes/PB700K3/applications/icons/._*
+```
+
+**Если что-то пошло не так** — меню не открывается, пропали приложения или Poklio не запускается — подключите ридер и верните на место `view.json` и `hash.txt` из копии, затем перезагрузите ридер.
+</details>
+
+<details>
 <summary><b>Запасной вход — через компьютер</b></summary>
 
 1. На компьютере откройте [эту ссылку](https://oauth.yandex.ru/authorize?response_type=token&client_id=4483e97bab6e486a9822973109a14d05) и войдите в Яндекс.
