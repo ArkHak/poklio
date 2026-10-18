@@ -175,7 +175,7 @@ If the new version won't start, connect the reader over USB and copy `system/sta
 <details>
 <summary><b>Known limitations</b></summary>
 
-- A new book sometimes shows up in the PocketBook library only after you restart the reader. It opens in Poklio right away.
+- The PocketBook library picks up changes with a delay: a new book usually shows up there only after you restart the reader, and a deleted one stays in the list, unopenable, until a restart. Poklio itself shows changes right away.
 - Book titles and descriptions are in the catalog's language, even with the English interface.
 - On the lock screen, covers of books from Poklio are slightly cropped at the top and bottom.
 </details>
