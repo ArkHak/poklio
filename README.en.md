@@ -10,6 +10,8 @@
   <a href="https://github.com/ArkHak/poklio/releases/latest"><img src="https://img.shields.io/github/v/release/ArkHak/poklio?label=download&style=for-the-badge&color=526B50" alt="Download"></a>
   &nbsp;
   <a href="#get-started"><img src="https://img.shields.io/badge/get_started-3_steps-202420?style=for-the-badge" alt="Get started"></a>
+  &nbsp;
+  <a href="#installs"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ArkHak/poklio/stats/badge.en.json&style=for-the-badge" alt="Installs"></a>
 </p>
 
 <p align="center">
@@ -251,6 +253,15 @@ If the new version won't start, connect the reader over USB and copy `system/sta
 
 [Open an issue](https://github.com/ArkHak/poklio/issues) with your reader model, firmware version, Poklio version (Settings → About) and what happened. A log helps: turn on Diagnostic log in Settings, repeat the problem and attach `poklio/poklio.log` from the reader. It contains no passwords or sign-in data.
 </details>
+
+## Installs
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArkHak/poklio/stats/downloads.en.dark.svg">
+  <img src="https://raw.githubusercontent.com/ArkHak/poklio/stats/downloads.en.light.svg" alt="Poklio installs chart" width="100%">
+</picture>
+
+An estimate: downloads of the app from the releases page, not counting over-the-air updates, which are shown separately. Updated daily.
 
 ---
 

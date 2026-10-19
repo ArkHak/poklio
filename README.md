@@ -10,6 +10,8 @@
   <a href="https://github.com/ArkHak/poklio/releases/latest"><img src="https://img.shields.io/github/v/release/ArkHak/poklio?label=%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C&style=for-the-badge&color=526B50" alt="Скачать"></a>
   &nbsp;
   <a href="#как-начать"><img src="https://img.shields.io/badge/%D0%BA%D0%B0%D0%BA_%D0%BD%D0%B0%D1%87%D0%B0%D1%82%D1%8C-3_%D1%88%D0%B0%D0%B3%D0%B0-202420?style=for-the-badge" alt="Как начать"></a>
+  &nbsp;
+  <a href="#сколько-установок"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ArkHak/poklio/stats/badge.json&style=for-the-badge" alt="Установки"></a>
 </p>
 
 <p align="center">
@@ -251,6 +253,15 @@ rm /Volumes/PB700K3/applications/icons/._*
 
 [Создайте обращение](https://github.com/ArkHak/poklio/issues): модель ридера, версия прошивки, версия Poklio («Настройки» → «О приложении») и что произошло. Помогает журнал: включите «Журнал диагностики» в настройках, повторите ошибку и приложите файл `poklio/poklio.log` с ридера — паролей и данных для входа в нём нет.
 </details>
+
+## Сколько установок
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArkHak/poklio/stats/downloads.dark.svg">
+  <img src="https://raw.githubusercontent.com/ArkHak/poklio/stats/downloads.light.svg" alt="График установок Poklio" width="100%">
+</picture>
+
+Число примерное: это скачивания приложения со страницы релизов без обновлений по воздуху, которые показаны отдельно. Данные обновляются раз в сутки.
 
 ---
 
