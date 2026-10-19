@@ -27,8 +27,8 @@
       The books in your Yandex Books account, with covers, right on your PocketBook.
     </td>
     <td width="33%" valign="top">
-      <b>One tap to get a book</b><br>
-      Tap Get book and it's in your reader's library, ready to open in the built-in reader app.
+      <b>One tap to your shelf</b><br>
+      Tap Put on shelf and it's in your reader's library, ready to open in the built-in reader app.
     </td>
     <td width="33%" valign="top">
       <b>Catalog search</b><br>
@@ -79,7 +79,7 @@ An estimate: downloads of the app from the releases page, not counting over-the-
     </td>
     <td width="33%" valign="top">
       <b>3. Read</b><br>
-      Pick a book in My books, tap Get book, then Open.
+      Pick a book in My books, tap Put on shelf, then Open.
     </td>
   </tr>
 </table>
@@ -247,7 +247,7 @@ Yandex Books for now (experimental). Litres, WB Books and others may come later.
 <details>
 <summary><b>Where are books stored, and how do I delete them?</b></summary>
 
-In the `Books/Poklio` folder, so they show up in your PocketBook library. Delete file from device on the book card removes the file; the book stays in your Yandex Books library.
+In the `Books/Poklio` folder, so they show up in your PocketBook library. Remove from shelf on the book card removes the file; the book stays in your Yandex Books library. All books on your reader are in the On the shelf section of the menu, which works offline.
 </details>
 
 <details>
