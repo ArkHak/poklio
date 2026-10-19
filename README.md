@@ -56,6 +56,15 @@
   <br><sub>Снимки экрана. Книги и обложки — для примера.</sub>
 </p>
 
+## Сколько установок
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArkHak/poklio/stats/downloads.dark.svg">
+  <img src="https://raw.githubusercontent.com/ArkHak/poklio/stats/downloads.light.svg" alt="График установок Poklio" width="100%">
+</picture>
+
+Число примерное: это скачивания приложения со страницы релизов без обновлений по воздуху, которые показаны отдельно. Данные обновляются раз в сутки.
+
 ## Как начать
 
 <table>
@@ -253,15 +262,6 @@ rm /Volumes/PB700K3/applications/icons/._*
 
 [Создайте обращение](https://github.com/ArkHak/poklio/issues): модель ридера, версия прошивки, версия Poklio («Настройки» → «О приложении») и что произошло. Помогает журнал: включите «Журнал диагностики» в настройках, повторите ошибку и приложите файл `poklio/poklio.log` с ридера — паролей и данных для входа в нём нет.
 </details>
-
-## Сколько установок
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArkHak/poklio/stats/downloads.dark.svg">
-  <img src="https://raw.githubusercontent.com/ArkHak/poklio/stats/downloads.light.svg" alt="График установок Poklio" width="100%">
-</picture>
-
-Число примерное: это скачивания приложения со страницы релизов без обновлений по воздуху, которые показаны отдельно. Данные обновляются раз в сутки.
 
 ---
 

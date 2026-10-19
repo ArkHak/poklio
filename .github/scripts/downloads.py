@@ -24,13 +24,15 @@ from pathlib import Path
 APP_ASSET = "poklio.app.bin"
 SIGNATURE_ASSET = "poklio.app.bin.sig"
 
-# Палитра из docs/brand.md: светлая тема — ink/graphite/mist/leaf,
-# тёмная — paper/leaf-light и приглушённые серые.
+# Палитра из docs/brand.md: светлая тема — ink/graphite/mist/leaf на paper,
+# тёмная — paper/leaf-light и приглушённые серые на почти чёрном.
+# У графика своя подложка: GitHub выбирает вариант по теме системы, а не сайта,
+# и без подложки светлый вариант на тёмной странице не читается.
 THEMES = {
-    "light": {"text": "#202420", "muted": "#616760", "grid": "#DDE2D8", "accent": "#526B50",
-              "second": "#616760"},
-    "dark": {"text": "#F5F3EC", "muted": "#A9AFA7", "grid": "#3A403A", "accent": "#8FAE8B",
-             "second": "#A9AFA7"},
+    "light": {"background": "#F5F3EC", "border": "#DDE2D8", "text": "#202420", "muted": "#616760",
+              "grid": "#DDE2D8", "accent": "#526B50", "second": "#616760", "chip": "#EAEDE5"},
+    "dark": {"background": "#161A16", "border": "#2C322C", "text": "#F5F3EC", "muted": "#A9AFA7",
+             "grid": "#2C322C", "accent": "#8FAE8B", "second": "#A9AFA7", "chip": "#202620"},
 }
 
 TEXTS = {
@@ -38,6 +40,7 @@ TEXTS = {
         "installs": "установки",
         "updates": "обновления по воздуху",
         "headline": lambda n: f"{Number(n, 'ru')} {Plural(n, 'установка', 'установки', 'установок')}",
+        "unit": lambda n: Plural(n, "установка", "установки", "установок"),
         "since": "без учёта обновлений по воздуху",
         "updated": "обновлено",
         "months": ["янв", "фев", "мар", "апр", "мая", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"],
@@ -46,6 +49,7 @@ TEXTS = {
         "installs": "installs",
         "updates": "over-the-air updates",
         "headline": lambda n: f"{Number(n, 'en')} {'install' if n == 1 else 'installs'}",
+        "unit": lambda n: "install" if n == 1 else "installs",
         "since": "not counting over-the-air updates",
         "updated": "updated",
         "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
@@ -136,8 +140,8 @@ def Escape(text):
 def RenderSvg(history, lang, theme):
     colors = THEMES[theme]
     texts = TEXTS[lang]
-    width, height = 800, 320
-    left, right, top, bottom = 56, 24, 104, 44
+    width, height = 800, 360
+    left, right, top, bottom = 64, 32, 144, 48
     plot_w, plot_h = width - left - right, height - top - bottom
 
     first, last = history[0][0], history[-1][0]
@@ -157,32 +161,50 @@ def RenderSvg(history, lang, theme):
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" '
         f'height="{height}" role="img" aria-label="{Escape(texts["headline"](installs))}" {font}>',
-        f'<text x="{left - 40}" y="48" font-size="34" font-weight="700" fill="{colors["text"]}">'
-        f'{Escape(texts["headline"](installs))}</text>',
-        f'<text x="{left - 40}" y="74" font-size="14" fill="{colors["muted"]}">{Escape(texts["since"])}</text>',
+        '<defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1">'
+        f'<stop offset="0" stop-color="{colors["accent"]}" stop-opacity="0.32"/>'
+        f'<stop offset="1" stop-color="{colors["accent"]}" stop-opacity="0"/>'
+        '</linearGradient></defs>',
+        f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="16" '
+        f'fill="{colors["background"]}" stroke="{colors["border"]}"/>',
+        f'<text x="32" y="80" fill="{colors["text"]}">'
+        f'<tspan font-size="56" font-weight="700" letter-spacing="-1">{Number(installs, lang)}</tspan>'
+        f'<tspan dx="12" font-size="22" font-weight="600">{Escape(texts["unit"](installs))}</tspan></text>',
+        f'<text x="32" y="110" font-size="14" fill="{colors["muted"]}">{Escape(texts["since"])} · '
+        f'{texts["updated"]} {FormatDate(last, lang, with_year=True)}</text>',
     ]
 
-    # Легенда: линии различаются и цветом, и начертанием.
-    legend_x = width - right - 250
-    parts += [
-        f'<line x1="{legend_x}" y1="40" x2="{legend_x + 24}" y2="40" stroke="{colors["accent"]}" stroke-width="3" stroke-linecap="round"/>',
-        f'<text x="{legend_x + 32}" y="45" font-size="14" fill="{colors["text"]}">{Escape(texts["installs"])} · {Number(installs, lang)}</text>',
-        f'<line x1="{legend_x}" y1="66" x2="{legend_x + 24}" y2="66" stroke="{colors["second"]}" stroke-width="2" stroke-dasharray="5 4"/>',
-        f'<text x="{legend_x + 32}" y="71" font-size="14" fill="{colors["text"]}">{Escape(texts["updates"])} · {Number(updates, lang)}</text>',
-    ]
+    # Легенда-плашки: линии различаются и цветом, и начертанием.
+    chip_w, chip_x = 264, width - 32 - 264
+    for row, (label, value, color, dash, stroke) in enumerate([
+            (texts["installs"], installs, colors["accent"], "", 3),
+            (texts["updates"], updates, colors["second"], ' stroke-dasharray="5 4"', 2)]):
+        y = 32 + row * 40
+        parts += [
+            f'<rect x="{chip_x}" y="{y}" width="{chip_w}" height="32" rx="16" fill="{colors["chip"]}"/>',
+            f'<line x1="{chip_x + 16}" y1="{y + 16}" x2="{chip_x + 36}" y2="{y + 16}" stroke="{color}" '
+            f'stroke-width="{stroke}" stroke-linecap="round"{dash}/>',
+            f'<text x="{chip_x + 46}" y="{y + 21}" font-size="13" fill="{colors["muted"]}">{Escape(label)}</text>',
+            f'<text x="{chip_x + chip_w - 16}" y="{y + 21}" font-size="14" font-weight="700" text-anchor="end" '
+            f'fill="{colors["text"]}">{Number(value, lang)}</text>',
+        ]
 
     for index in range(5):
         value = y_max * index // 4
         y = Y(value)
-        parts.append(f'<line x1="{left}" y1="{y:.1f}" x2="{width - right}" y2="{y:.1f}" stroke="{colors["grid"]}" stroke-width="1"/>')
-        parts.append(f'<text x="{left - 10}" y="{y + 4:.1f}" font-size="12" text-anchor="end" fill="{colors["muted"]}">{Number(value, lang)}</text>')
+        dash = "" if index == 0 else ' stroke-dasharray="2 6"'
+        parts.append(f'<line x1="{left}" y1="{y:.1f}" x2="{width - right}" y2="{y:.1f}" stroke="{colors["grid"]}" '
+                     f'stroke-width="1"{dash}/>')
+        parts.append(f'<text x="{left - 14}" y="{y + 4:.1f}" font-size="12" text-anchor="end" '
+                     f'fill="{colors["muted"]}">{Number(value, lang)}</text>')
 
     labels = [first] if first == last else [first, last]
     if span >= 14:
         labels.insert(1, first + dt.timedelta(days=span // 2))
     for index, day in enumerate(labels):
         anchor = "middle" if len(labels) == 1 else ("start" if index == 0 else "end" if day == last else "middle")
-        parts.append(f'<text x="{X(day):.1f}" y="{height - bottom + 22}" font-size="12" text-anchor="{anchor}" fill="{colors["muted"]}">{FormatDate(day, lang)}</text>')
+        parts.append(f'<text x="{X(day):.1f}" y="{height - bottom + 26}" font-size="12" text-anchor="{anchor}" '
+                     f'fill="{colors["muted"]}">{FormatDate(day, lang)}</text>')
 
     def Points(column):
         return " ".join(f"{X(row[0]):.1f},{Y(row[column]):.1f}" for row in history)
@@ -191,15 +213,18 @@ def RenderSvg(history, lang, theme):
         base = Y(0)
         area = f"{X(first):.1f},{base:.1f} {Points(1)} {X(last):.1f},{base:.1f}"
         parts += [
-            f'<polygon points="{area}" fill="{colors["accent"]}" fill-opacity="0.14"/>',
-            f'<polyline points="{Points(2)}" fill="none" stroke="{colors["second"]}" stroke-width="2" stroke-dasharray="5 4" stroke-linejoin="round"/>',
-            f'<polyline points="{Points(1)}" fill="none" stroke="{colors["accent"]}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>',
+            f'<polygon points="{area}" fill="url(#area)"/>',
+            f'<polyline points="{Points(2)}" fill="none" stroke="{colors["second"]}" stroke-width="2" '
+            f'stroke-dasharray="5 4" stroke-linejoin="round"/>',
+            f'<polyline points="{Points(1)}" fill="none" stroke="{colors["accent"]}" stroke-width="3" '
+            f'stroke-linejoin="round" stroke-linecap="round"/>',
         ]
     parts += [
-        f'<circle cx="{X(last):.1f}" cy="{Y(updates):.1f}" r="3.5" fill="{colors["second"]}"/>',
-        f'<circle cx="{X(last):.1f}" cy="{Y(installs):.1f}" r="5" fill="{colors["accent"]}"/>',
-        f'<text x="{width - right}" y="{height - 4}" font-size="11" text-anchor="end" fill="{colors["muted"]}">'
-        f'{texts["updated"]} {FormatDate(last, lang, with_year=True)}</text>',
+        f'<circle cx="{X(last):.1f}" cy="{Y(updates):.1f}" r="4" fill="{colors["second"]}" '
+        f'stroke="{colors["background"]}" stroke-width="2"/>',
+        f'<circle cx="{X(last):.1f}" cy="{Y(installs):.1f}" r="11" fill="{colors["accent"]}" fill-opacity="0.2"/>',
+        f'<circle cx="{X(last):.1f}" cy="{Y(installs):.1f}" r="5.5" fill="{colors["accent"]}" '
+        f'stroke="{colors["background"]}" stroke-width="2"/>',
         "</svg>",
     ]
     return "\n".join(parts) + "\n"
