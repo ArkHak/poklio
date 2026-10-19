@@ -226,7 +226,16 @@ No. Poklio only gets books your account can read in full, and it doesn't bypass 
 <details>
 <summary><b>Which readers does it work on?</b></summary>
 
-It's tested on PocketBook 700 Era Color with firmware 6.10. It needs firmware 6.8 or later. Poklio 0.1.0 didn't start on firmware 6.8 — fixed in 0.1.1. It may work on other PocketBook models but hasn't been tested yet. [Let us know](https://github.com/ArkHak/poklio/issues) if you try.
+It needs firmware 6.8 or later. Poklio 0.1.0 didn't start on firmware 6.8 — fixed in 0.1.1.
+
+Tested models:
+
+| Model | Firmware | Poklio | What was tested | Date | Tested by |
+|---|---|---|---|---|---|
+| PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.1.1 | All features, dark mode, over-the-air update | 2026-10-19 | Author |
+| PocketBook 700 Era (PB700) | U700.6.8.4183 | 0.1.1 | Launch and everyday use | 2026-10-19 | User |
+
+Poklio most likely works on other touchscreen PocketBook readers with firmware 6.8 or later, but it hasn't been tested on them yet. If you try it on your reader, [send a device report](https://github.com/ArkHak/poklio/issues/new?template=device-report.yml) and it will be added to this table.
 </details>
 
 <details>
@@ -260,7 +269,7 @@ If the new version won't start, connect the reader over USB and copy `system/sta
 <details>
 <summary><b>Found a bug?</b></summary>
 
-[Open an issue](https://github.com/ArkHak/poklio/issues) with your reader model, firmware version, Poklio version (Settings → About) and what happened. A log helps: turn on Diagnostic log in Settings, repeat the problem and attach `poklio/poklio.log` from the reader. It contains no passwords or sign-in data.
+[Report a bug](https://github.com/ArkHak/poklio/issues/new?template=bug-report.yml) with your reader model, firmware version, Poklio version (Settings → About) and what happened. A log helps: turn on Diagnostic log in Settings, repeat the problem and attach `poklio/poklio.log` from the reader. It contains no passwords or sign-in data.
 </details>
 
 ---

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Вопросы и инструкции / FAQ and instructions
+    url: https://github.com/ArkHak/poklio#readme
+    about: Установка, вход, обновления и известные ограничения / Installing, signing in, updates and known limitations

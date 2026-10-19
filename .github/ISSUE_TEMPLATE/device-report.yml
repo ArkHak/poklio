@@ -1,0 +1,131 @@
+name: Отчёт о модели / Device report
+description: Как Poklio работает на вашем ридере / How Poklio works on your reader
+title: "Отчёт: "
+labels: ["device-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что проверили Poklio на своём ридере! По отчётам пополняется таблица проверенных моделей на главной странице. Если для проверки нужна подписка Яндекс Книг, а её нет, — отметьте «Не проверял».
+
+        Thanks for trying Poklio on your reader! Reports are used to update the table of tested models on the main page. If something needs a Yandex Books subscription you don't have, choose "Not tested".
+  - type: input
+    id: model
+    attributes:
+      label: Модель ридера / Reader model
+      placeholder: PocketBook 700 Era Color (PB700K3)
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Версия прошивки / Firmware version
+      description: Настройки ридера → «Об устройстве» / Reader settings → About device
+      placeholder: U700k3.6.10.2359
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Версия Poklio / Poklio version
+      description: В Poklio — «Настройки» → «О приложении» / In Poklio — Settings → About
+      placeholder: "0.1.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: launch
+    attributes:
+      label: Запуск / Launch
+      options:
+        - Запускается / Starts
+        - Не запускается — ридер возвращается в меню / Doesn't start — the reader goes back to the menu
+        - Запускается, но экран выглядит неправильно / Starts, but the screen looks wrong
+    validations:
+      required: true
+  - type: dropdown
+    id: sign-in
+    attributes:
+      label: Вход с телефона / Signing in with your phone
+      options:
+        - Работает / Works
+        - Не работает / Doesn't work
+        - Не проверял / Not tested
+      default: 2
+  - type: dropdown
+    id: my-books
+    attributes:
+      label: «Мои книги» и обложки / My books and covers
+      options:
+        - Работает / Works
+        - Не работает / Doesn't work
+        - Не проверял / Not tested
+      default: 2
+  - type: dropdown
+    id: get-open
+    attributes:
+      label: «Получить книгу» и «Открыть» / Get book and Open
+      options:
+        - Работает / Works
+        - Не работает / Doesn't work
+        - Не проверял / Not tested
+      default: 2
+  - type: dropdown
+    id: search
+    attributes:
+      label: Поиск / Search
+      options:
+        - Работает / Works
+        - Не работает / Doesn't work
+        - Не проверял / Not tested
+      default: 2
+  - type: dropdown
+    id: dark-mode
+    attributes:
+      label: Тёмный режим прошивки / Firmware dark mode
+      options:
+        - Работает / Works
+        - Не работает / Doesn't work
+        - Не проверял / Not tested
+      default: 2
+  - type: dropdown
+    id: update
+    attributes:
+      label: Обновление Poklio по воздуху / Poklio over-the-air update
+      options:
+        - Работает / Works
+        - Не работает / Doesn't work
+        - Не проверял / Not tested
+      default: 2
+  - type: dropdown
+    id: buttons
+    attributes:
+      label: Физические кнопки листания / Page-turn buttons
+      options:
+        - Работают / Work
+        - Не работают / Don't work
+        - На ридере их нет / The reader has none
+        - Не проверял / Not tested
+      default: 3
+  - type: dropdown
+    id: layout
+    attributes:
+      label: Внешний вид / Layout
+      description: Текст и кнопки помещаются, ничего не слишком мелко / Text and buttons fit, nothing is too small
+      options:
+        - Работает / Works
+        - Не работает / Doesn't work
+        - Не проверял / Not tested
+      default: 2
+  - type: textarea
+    id: problems
+    attributes:
+      label: Что не так / What went wrong
+      description: Что делали, что ожидали увидеть и что увидели / What you did, what you expected and what happened
+  - type: textarea
+    id: log
+    attributes:
+      label: Журнал — по желанию / Log (optional)
+      description: |
+        Включите «Журнал диагностики» в «Настройках» Poklio, повторите проверку, подключите ридер к компьютеру и перетащите сюда файл `poklio/poklio.log`. В журнале есть модель, прошивка, параметры экрана, номера книг в Яндекс Книгах и имена полученных файлов (автор и название); токена, cookies и серийного номера ридера в нём нет.
+
+        Turn on Diagnostic log in Poklio's Settings, repeat the check, connect the reader to a computer and drag `poklio/poklio.log` here. The log has the reader model, firmware, screen parameters, Yandex Books book IDs and the names of downloaded files (author and title); it has no token, cookies or reader serial number.

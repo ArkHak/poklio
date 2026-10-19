@@ -1,0 +1,43 @@
+name: Ошибка / Bug report
+description: Что-то в Poklio работает не так / Something in Poklio doesn't work right
+title: "Ошибка: "
+labels: ["bug"]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Модель ридера / Reader model
+      placeholder: PocketBook 700 Era Color (PB700K3)
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Версия прошивки / Firmware version
+      description: Настройки ридера → «Об устройстве» / Reader settings → About device
+      placeholder: U700k3.6.10.2359
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Версия Poklio / Poklio version
+      description: В Poklio — «Настройки» → «О приложении» / In Poklio — Settings → About
+      placeholder: "0.1.1"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Что произошло / What happened
+      description: Что делали, что ожидали увидеть и что увидели / What you did, what you expected and what happened
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Журнал — по желанию / Log (optional)
+      description: |
+        Включите «Журнал диагностики» в «Настройках» Poklio, повторите ошибку, подключите ридер к компьютеру и перетащите сюда файл `poklio/poklio.log`. В журнале есть модель, прошивка, параметры экрана, номера книг в Яндекс Книгах и имена полученных файлов (автор и название); токена, cookies и серийного номера ридера в нём нет.
+
+        Turn on Diagnostic log in Poklio's Settings, repeat the problem, connect the reader to a computer and drag `poklio/poklio.log` here. The log has the reader model, firmware, screen parameters, Yandex Books book IDs and the names of downloaded files (author and title); it has no token, cookies or reader serial number.
