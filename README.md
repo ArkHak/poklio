@@ -211,7 +211,7 @@ rm /Volumes/PB700K3/applications/icons/._*
 <details>
 <summary><b>На каких ридерах работает?</b></summary>
 
-Проверен на PocketBook 700 Era Color. На других моделях PocketBook может работать, но пока не проверялся — [расскажите](https://github.com/ArkHak/poklio/issues), если попробуете.
+Проверен на PocketBook 700 Era Color с прошивкой 6.10. Нужна прошивка 6.8 или новее. Poklio 0.1.0 на прошивке 6.8 не запускался — исправлено в 0.1.1. На других моделях PocketBook может работать, но пока не проверялся — [расскажите](https://github.com/ArkHak/poklio/issues), если попробуете.
 </details>
 
 <details>

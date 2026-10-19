@@ -211,7 +211,7 @@ No. Poklio only gets books your account can read in full, and it doesn't bypass 
 <details>
 <summary><b>Which readers does it work on?</b></summary>
 
-It's tested on PocketBook 700 Era Color. It may work on other PocketBook models but hasn't been tested yet. [Let us know](https://github.com/ArkHak/poklio/issues) if you try.
+It's tested on PocketBook 700 Era Color with firmware 6.10. It needs firmware 6.8 or later. Poklio 0.1.0 didn't start on firmware 6.8 — fixed in 0.1.1. It may work on other PocketBook models but hasn't been tested yet. [Let us know](https://github.com/ArkHak/poklio/issues) if you try.
 </details>
 
 <details>
