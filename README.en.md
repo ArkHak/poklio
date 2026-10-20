@@ -244,6 +244,7 @@ Tested models:
 
 | Model | Firmware | Poklio | What was tested | Date | Tested by |
 |---|---|---|---|---|---|
+| PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.0 | Yandex Books and Litres, several libraries at once, over-the-air update | 2026-10-21 | Author |
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.1.1 | All features, dark mode, over-the-air update | 2026-10-19 | Author |
 | PocketBook 700 Era (PB700) | U700.6.8.4183 | 0.1.1 | Launch and everyday use | 2026-10-19 | User |
 
