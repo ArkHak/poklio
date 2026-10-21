@@ -252,12 +252,13 @@ No. Poklio only gets books your account can read in full, and it doesn't bypass 
 <details>
 <summary><b>Which readers does it work on?</b></summary>
 
-It needs firmware 6.8 or later. Poklio 0.1.0 didn't start on firmware 6.8 — fixed in 0.1.1.
+It needs firmware 6.8 or later. Poklio 0.1.0 didn't start on firmware 6.8 — fixed in 0.1.1. A user report confirms it also starts and works on firmware 6.5 (PocketBook X).
 
 Tested models:
 
 | Model | Firmware | Poklio | What was tested | Date | Tested by |
 |---|---|---|---|---|---|
+| PocketBook X (PB1040) | U1040.6.5.1701 | 0.2.1 | Launch, signing in with a phone, My books and covers, getting and opening a book, search | 2026-10-21 | User |
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.1 | Books show up in the PocketBook library right away, over-the-air update | 2026-10-21 | Author |
 | PocketBook 634 Verse Pro Color (PB634K3) | 6.10 | 0.2 | Litres: sign-in, My books, downloading purchased books | 2026-10-21 | User |
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.0 | Yandex Books and Litres, several libraries at once, over-the-air update | 2026-10-21 | Author |
