@@ -244,6 +244,7 @@ Tested models:
 
 | Model | Firmware | Poklio | What was tested | Date | Tested by |
 |---|---|---|---|---|---|
+| PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.1 | Books show up in the PocketBook library right away, over-the-air update | 2026-10-21 | Author |
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.0 | Yandex Books and Litres, several libraries at once, over-the-air update | 2026-10-21 | Author |
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.1.1 | All features, dark mode, over-the-air update | 2026-10-19 | Author |
 | PocketBook 700 Era (PB700) | U700.6.8.4183 | 0.1.1 | Launch and everyday use | 2026-10-19 | User |
@@ -260,7 +261,7 @@ Yandex Books and Litres (both experimental). You can connect both at once: My bo
 <details>
 <summary><b>Where are books stored, and how do I delete them?</b></summary>
 
-In the `Books/Poklio` folder, so they show up in your PocketBook library. Remove from shelf on the book card removes the file; the book stays in your Yandex Books library or Litres account. All books on your reader are in the On the shelf section of the menu, which works offline.
+In the `Books/Poklio` folder, so they show up in your PocketBook library right away. Remove from shelf on the book card removes the file; the book stays in your Yandex Books library or Litres account. All books on your reader are in the On the shelf section of the menu, which works offline.
 </details>
 
 <details>
@@ -274,7 +275,6 @@ If the new version won't start, connect the reader over USB and copy `system/sta
 <details>
 <summary><b>Known limitations</b></summary>
 
-- The PocketBook library picks up changes with a delay: a new book usually shows up there only after you restart the reader, and a deleted one stays in the list, unopenable, until a restart. Poklio itself shows changes right away.
 - Book titles and descriptions are in the catalog's language, even with the English interface.
 - Litres: sign in by email or with a code from the app; signing in with a phone number isn't available yet.
 - On the lock screen, covers of books from Poklio are slightly cropped at the top and bottom.
