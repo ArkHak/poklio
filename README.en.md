@@ -24,7 +24,7 @@
   <tr>
     <td width="33%" valign="top">
       <b>All your libraries on your reader</b><br>
-      Yandex Books and Litres in one list, with covers and a tag showing each book's library.
+      Yandex Books, Litres and WB Books in one list, with covers and a tag showing each book's library.
     </td>
     <td width="33%" valign="top">
       <b>One tap to your shelf</b><br>
@@ -38,7 +38,7 @@
   <tr>
     <td valign="top">
       <b>No password on the reader</b><br>
-      Yandex Books: scan a QR code with your phone. Litres: a code from an email or the Litres app.
+      Yandex Books and WB Books: scan a QR code with your phone. Litres: a code from an email or the Litres app.
     </td>
     <td valign="top">
       <b>Made for E Ink</b><br>
@@ -75,7 +75,7 @@ An estimate: downloads of the app from the releases page, not counting over-the-
     </td>
     <td width="33%" valign="top">
       <b>2. Connect</b><br>
-      In Poklio, tap Connect a library. Yandex Books: Sign in with phone and a QR code. Litres: Sign in with a code and a code from an email.
+      In Poklio, tap Connect a library. Yandex Books and WB Books: Sign in with phone and a QR code. Litres: Sign in with a code and a code from an email.
     </td>
     <td width="33%" valign="top">
       <b>3. Read</b><br>
@@ -84,7 +84,7 @@ An estimate: downloads of the app from the releases page, not counting over-the-
   </tr>
 </table>
 
-You'll need Wi-Fi and either a Yandex Books account with a subscription or a Litres account with purchased books. To sign in to Yandex Books, your phone and reader must be on the same network.
+You'll need Wi-Fi and a Yandex Books or WB Books account with a subscription, or a Litres account with purchased books. To sign in with a phone, your phone and reader must be on the same network.
 
 > **The Bookmate error page is expected.** After you sign in to Yandex, your phone opens a page saying that authorization in the Bookmate app failed (in Russian: «Авторизация в приложении Букмейт не удалась»). Nothing is broken: Yandex Books used to be called Bookmate, and Poklio signs in through that app. If your Yandex sign-in went through, access is already in this page's address: it starts with `https://yx4483e97…oauth.yandex.ru` and contains `#access_token=`. The screenshots below are from a phone set to Russian. Copy the full address, go back to the Poklio tab, paste it and tap Connect.
 >
@@ -109,7 +109,21 @@ You'll need Wi-Fi and either a Yandex Books account with a subscription or a Lit
 
 If you have the Litres app on your phone, you can skip the email: tap Code from the app on the sign-in screen. In the Litres app: Profile → Sign-in information → Code for the Litres website → Get. The code is valid for 15 minutes.
 
-Only purchased books without copy protection can be downloaded to the reader. Books from a Litres subscription can only be read in the Litres apps — Poklio tags them Only in the Litres app.
+Only purchased books without copy protection can be downloaded to the reader, and only as EPUB: if Litres has no EPUB for a book (for example, only a PDF), Poklio can't get it. Books from a Litres subscription can only be read in the Litres apps — Poklio tags them Only in the Litres app.
+</details>
+
+<details>
+<summary><b>Signing in to WB Books, step by step</b></summary>
+
+1. On the reader: Menu → Libraries → Sign in with phone under WB Books. A QR code appears.
+2. Point your phone's camera at it and open the page.
+3. Tap Sign in to WB ID, sign in with your phone number and the SMS code, then tap Accept.
+4. A WB Books page with a Return to the app button opens — don't tap it. Copy that page's full address: touch and hold the address bar → Copy.
+5. Go back to the Poklio tab, paste the address and tap Connect. My books opens on the reader.
+
+If your WB ID profile opens instead of the WB Books page, go back to the Poklio tab and tap Sign in to WB ID again. The code in the address works only once: if it doesn't work, sign in again.
+
+You can download books included in your active WB Books subscription; Poklio checks purchases too, but downloading a purchased book hasn't been tested yet. Audiobooks aren't shown in Poklio.
 </details>
 
 <details>
@@ -204,7 +218,7 @@ The file gives access to your account: don't share it, and delete it from your c
     <td width="50%" valign="top">
       <b>What's protected</b>
       <ul>
-        <li>You type your password only on the Yandex website. The reader never sees it. Litres needs no password: you sign in with a code that goes straight to Litres.</li>
+        <li>You type your password only on the Yandex website. The reader never sees it. Litres needs no password: you sign in with a code that goes straight to Litres. For WB Books, you enter the SMS code only in your phone's browser; the reader gets a single-use sign-in code.</li>
         <li>Your sign-in data is encrypted over Wi-Fi and stored encrypted on the reader.</li>
         <li>The sign-in page only works while the sign-in screen is open, for up to 10 minutes.</li>
         <li>The reader won't install an update without the author's valid signature.</li>
@@ -213,9 +227,9 @@ The file gives access to your account: don't share it, and delete it from your c
     <td width="50%" valign="top">
       <b>What you should do</b>
       <ul>
-        <li>After signing in, delete the Yandex page from your browser history and copy some other text.</li>
+        <li>After signing in, delete the Yandex or WB Books page from your browser history and copy some other text.</li>
         <li>Sign in on your own network, not a public one.</li>
-        <li>Protection on the reader guards against stray copies of its memory, not against someone holding the reader itself. If you lose your reader or give it away, revoke access in <a href="https://id.yandex.ru/personal/data-access">Yandex ID → Data access</a>; for Litres, contact Litres support to end your sessions.</li>
+        <li>Protection on the reader guards against stray copies of its memory, not against someone holding the reader itself. If you lose your reader or give it away, revoke access in <a href="https://id.yandex.ru/personal/data-access">Yandex ID → Data access</a>; for Litres, contact Litres support to end your sessions; for WB Books, end the session in your WB ID profile (Sessions).</li>
       </ul>
     </td>
   </tr>
@@ -224,15 +238,15 @@ The file gives access to your account: don't share it, and delete it from your c
 ## FAQ
 
 <details>
-<summary><b>Is this an official Yandex, Litres or PocketBook app?</b></summary>
+<summary><b>Is this an official Yandex, Litres, Wildberries or PocketBook app?</b></summary>
 
-No. Poklio is an independent project, not affiliated with PocketBook, Yandex, Litres or any other company. Service names are used only to show compatibility. Poklio connects to Yandex Books and Litres unofficially, so the connection is marked as experimental: if a service changes something, Poklio may stop working until an update.
+No. Poklio is an independent project, not affiliated with PocketBook, Yandex, Litres, Wildberries or any other company. Service names are used only to show compatibility. Poklio connects to Yandex Books, Litres and WB Books unofficially, so the connection is marked as experimental: if a service changes something, Poklio may stop working until an update.
 </details>
 
 <details>
 <summary><b>Can I get a book that isn't in my subscription?</b></summary>
 
-No. Poklio only gets books your account can read in full, and it doesn't bypass service restrictions. For Litres, these are your purchased books; books from a Litres subscription can't be downloaded to the reader — the service only serves them to its own apps.
+No. Poklio only gets books your account can read in full, and it doesn't bypass service restrictions. For Litres, these are your purchased books; books from a Litres subscription can't be downloaded to the reader — the service only serves them to its own apps. For WB Books, these are books from your active subscription and purchased books. Poklio doesn't promise access after the subscription ends; files already on the reader stay there.
 </details>
 
 <details>
@@ -245,6 +259,7 @@ Tested models:
 | Model | Firmware | Poklio | What was tested | Date | Tested by |
 |---|---|---|---|---|---|
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.1 | Books show up in the PocketBook library right away, over-the-air update | 2026-10-21 | Author |
+| PocketBook 634 Verse Pro Color (PB634K3) | 6.10 | 0.2 | Litres: sign-in, My books, downloading purchased books | 2026-10-21 | User |
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.0 | Yandex Books and Litres, several libraries at once, over-the-air update | 2026-10-21 | Author |
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.1.1 | All features, dark mode, over-the-air update | 2026-10-19 | Author |
 | PocketBook 700 Era (PB700) | U700.6.8.4183 | 0.1.1 | Launch and everyday use | 2026-10-19 | User |
@@ -255,13 +270,13 @@ Poklio most likely works on other touchscreen PocketBook readers with firmware 6
 <details>
 <summary><b>Which libraries are supported?</b></summary>
 
-Yandex Books and Litres (both experimental). You can connect both at once: My books shows books from both with a library tag, and on the Libraries screen you can hide either one without disconnecting it. WB Books and others may come later.
+Yandex Books, Litres and WB Books (all experimental). You can connect them all at once: My books shows books from each with a library tag, and on the Libraries screen you can hide any of them without disconnecting it.
 </details>
 
 <details>
 <summary><b>Where are books stored, and how do I delete them?</b></summary>
 
-In the `Books/Poklio` folder, so they show up in your PocketBook library right away. Remove from shelf on the book card removes the file; the book stays in your Yandex Books library or Litres account. All books on your reader are in the On the shelf section of the menu, which works offline.
+In the `Books/Poklio` folder, so they show up in your PocketBook library right away. Remove from shelf on the book card removes the file; the book stays in your Yandex Books library or your Litres or WB Books account. All books on your reader are in the On the shelf section of the menu, which works offline.
 </details>
 
 <details>
@@ -277,6 +292,7 @@ If the new version won't start, connect the reader over USB and copy `system/sta
 
 - Book titles and descriptions are in the catalog's language, even with the English interface.
 - Litres: sign in by email or with a code from the app; signing in with a phone number isn't available yet.
+- Litres: books are downloaded only as EPUB. A purchased book with no EPUB (for example, only a PDF) won't reach your reader; you can't pick another format, such as FB2, yet.
 - On the lock screen, covers of books from Poklio are slightly cropped at the top and bottom.
 </details>
 
