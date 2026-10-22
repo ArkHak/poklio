@@ -259,7 +259,7 @@ Tested models:
 | Model | Firmware | Poklio | What was tested | Date | Tested by |
 |---|---|---|---|---|---|
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.4.0 | Reading position sync with Yandex Books both ways, over-the-air update | 2026-10-22 | Author |
-| PocketBook X (PB1040) | U1040.6.5.1701 | 0.2.1 | Launch, signing in with a phone, My books and covers, getting and opening a book, search | 2026-10-21 | User |
+| PocketBook X (PB1040) | U1040.6.5.1701 | 0.2.1 → 0.3.0 | Launch, signing in with a phone, My books and covers, getting and opening a book, search, over-the-air update, page-turn buttons | 2026-10-21–22 | User |
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.1 | Books show up in the PocketBook library right away, over-the-air update | 2026-10-21 | Author |
 | PocketBook 634 Verse Pro Color (PB634K3) | 6.10 | 0.2 | Litres: sign-in, My books, downloading purchased books | 2026-10-21 | User |
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.0 | Yandex Books and Litres, several libraries at once, over-the-air update | 2026-10-21 | Author |
@@ -298,7 +298,7 @@ It all happens automatically, with no buttons: when Poklio opens and when you re
 
 The “Sync progress” button on the book page is a fallback to sync right away, for example if Wi-Fi was off. You don't need to press it.
 
-Only books put on the shelf through Poklio are synced. Litres: the book page shows how far you have read in the Litres app, but the place is not carried between the reader and the phone. WB Books: no sync yet.
+Only books put on the shelf through Poklio are synced. Litres: the book page shows how far you have read in the Litres app, but the place is not carried between the reader and the phone. WB Books: no sync yet. Proper sync for Litres and WB Books will be added later.
 </details>
 
 <details>
