@@ -86,18 +86,18 @@ An estimate: downloads of the app from the releases page, not counting over-the-
 
 You'll need Wi-Fi and a Yandex Books or WB Books account with a subscription, or a Litres account with purchased books. To sign in with a phone, your phone and reader must be on the same network.
 
-> **The Bookmate error page is expected.** After you sign in to Yandex, your phone opens a page saying that authorization in the Bookmate app failed (in Russian: «Авторизация в приложении Букмейт не удалась»). Nothing is broken: Yandex Books used to be called Bookmate, and Poklio signs in through that app. If your Yandex sign-in went through, access is already in this page's address: it starts with `https://yx4483e97…oauth.yandex.ru` and contains `#access_token=`. The screenshots below are from a phone set to Russian. Copy the full address, go back to the Poklio tab, paste it and tap Connect.
->
-> <img src="images/sign-in-steps-en.png" alt="Left: the Poklio page on the phone, 1 — the sign-in button, 3 — paste the address into the field and tap the button below it. Right: the Bookmate authorization failed page, which is expected; 2 — touch and hold the address bar and copy the address">
-
 <details>
-<summary><b>Signing in with your phone, step by step</b></summary>
+<summary><b>Signing in to Yandex Books, step by step</b></summary>
 
 1. On the reader: Connect a library → Sign in with phone. A QR code appears.
 2. Point your phone's camera at it and open the page.
 3. Tap Sign in to Yandex and sign in to your account.
-4. You'll land on a Yandex page saying that authorization in the Bookmate app failed. **This isn't an error** (see "The Bookmate error page is expected" above). Copy the page's full address: press and hold the address bar → Copy.
+4. You'll land on a Yandex page saying that authorization in the Bookmate app failed (in Russian: «Авторизация в приложении Букмейт не удалась»). **This isn't an error**: Yandex Books used to be called Bookmate, and Poklio signs in through that app. Access is already in this page's address — it starts with `https://yx4483e97…oauth.yandex.ru` and contains `#access_token=`. Copy the page's full address: press and hold the address bar → Copy.
 5. Go back to the Poklio tab, paste the address and tap Connect. My books opens on your reader.
+
+The screenshot below is from a phone set to Russian.
+
+<img src="images/sign-in-steps-en.png" alt="Left: the Poklio page on the phone, 1 — the sign-in button, 3 — paste the address into the field and tap the button below it. Right: the Bookmate authorization failed page, which is expected; 2 — touch and hold the address bar and copy the address">
 </details>
 
 <details>
