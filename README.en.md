@@ -258,6 +258,7 @@ Tested models:
 
 | Model | Firmware | Poklio | What was tested | Date | Tested by |
 |---|---|---|---|---|---|
+| PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.4.0 | Reading position sync with Yandex Books both ways, over-the-air update | 2026-10-22 | Author |
 | PocketBook X (PB1040) | U1040.6.5.1701 | 0.2.1 | Launch, signing in with a phone, My books and covers, getting and opening a book, search | 2026-10-21 | User |
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.1 | Books show up in the PocketBook library right away, over-the-air update | 2026-10-21 | Author |
 | PocketBook 634 Verse Pro Color (PB634K3) | 6.10 | 0.2 | Litres: sign-in, My books, downloading purchased books | 2026-10-21 | User |
