@@ -289,6 +289,18 @@ If the new version won't start, connect the reader over USB and copy `system/sta
 </details>
 
 <details>
+<summary><b>Does my reading position sync?</b></summary>
+
+Yes, for Yandex Books, both ways (experimental). Read further on the reader, and the app on your phone opens the book at the same place. Read further on your phone, and the reader's built-in reader opens the book where you stopped. On the shelf and on the book page you see “Read N%”.
+
+It all happens automatically, with no buttons: when Poklio opens and when you return to it from the reader, if Wi-Fi is on. After reading, the device takes a few seconds to reconnect to Wi-Fi, so the percentage may update a little later. Progress only moves forward: if you go back in a book, Poklio does not carry that place to the phone or the reader.
+
+The “Sync progress” button on the book page is a fallback to sync right away, for example if Wi-Fi was off. You don't need to press it.
+
+Only books put on the shelf through Poklio are synced. Litres: the book page shows how far you have read in the Litres app, but the place is not carried between the reader and the phone. WB Books: no sync yet.
+</details>
+
+<details>
 <summary><b>Known limitations</b></summary>
 
 - Book titles and descriptions are in the catalog's language, even with the English interface.
