@@ -1,32 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-label="16 installs" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-label="21 installs" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
 <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FAE8B" stop-opacity="0.32"/><stop offset="1" stop-color="#8FAE8B" stop-opacity="0"/></linearGradient></defs>
 <rect x="0.5" y="0.5" width="799" height="359" rx="16" fill="#161A16" stroke="#2C322C"/>
-<text x="32" y="80" fill="#F5F3EC"><tspan font-size="56" font-weight="700" letter-spacing="-1">16</tspan><tspan dx="12" font-size="22" font-weight="600">installs</tspan></text>
-<text x="32" y="110" font-size="14" fill="#A9AFA7">not counting over-the-air updates · updated Oct 21 2026</text>
+<text x="32" y="80" fill="#F5F3EC"><tspan font-size="56" font-weight="700" letter-spacing="-1">21</tspan><tspan dx="12" font-size="22" font-weight="600">installs</tspan></text>
+<text x="32" y="110" font-size="14" fill="#A9AFA7">not counting over-the-air updates · updated Oct 22 2026</text>
 <rect x="504" y="32" width="264" height="32" rx="16" fill="#202620"/>
 <line x1="520" y1="48" x2="540" y2="48" stroke="#8FAE8B" stroke-width="3" stroke-linecap="round"/>
 <text x="550" y="53" font-size="13" fill="#A9AFA7">installs</text>
-<text x="752" y="53" font-size="14" font-weight="700" text-anchor="end" fill="#F5F3EC">16</text>
+<text x="752" y="53" font-size="14" font-weight="700" text-anchor="end" fill="#F5F3EC">21</text>
 <rect x="504" y="72" width="264" height="32" rx="16" fill="#202620"/>
 <line x1="520" y1="88" x2="540" y2="88" stroke="#A9AFA7" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 4"/>
 <text x="550" y="93" font-size="13" fill="#A9AFA7">over-the-air updates</text>
-<text x="752" y="93" font-size="14" font-weight="700" text-anchor="end" fill="#F5F3EC">16</text>
+<text x="752" y="93" font-size="14" font-weight="700" text-anchor="end" fill="#F5F3EC">21</text>
 <line x1="64" y1="312.0" x2="768" y2="312.0" stroke="#2C322C" stroke-width="1"/>
 <text x="50" y="316.0" font-size="12" text-anchor="end" fill="#A9AFA7">0</text>
 <line x1="64" y1="270.0" x2="768" y2="270.0" stroke="#2C322C" stroke-width="1" stroke-dasharray="2 6"/>
-<text x="50" y="274.0" font-size="12" text-anchor="end" fill="#A9AFA7">5</text>
+<text x="50" y="274.0" font-size="12" text-anchor="end" fill="#A9AFA7">10</text>
 <line x1="64" y1="228.0" x2="768" y2="228.0" stroke="#2C322C" stroke-width="1" stroke-dasharray="2 6"/>
-<text x="50" y="232.0" font-size="12" text-anchor="end" fill="#A9AFA7">10</text>
+<text x="50" y="232.0" font-size="12" text-anchor="end" fill="#A9AFA7">20</text>
 <line x1="64" y1="186.0" x2="768" y2="186.0" stroke="#2C322C" stroke-width="1" stroke-dasharray="2 6"/>
-<text x="50" y="190.0" font-size="12" text-anchor="end" fill="#A9AFA7">15</text>
+<text x="50" y="190.0" font-size="12" text-anchor="end" fill="#A9AFA7">30</text>
 <line x1="64" y1="144.0" x2="768" y2="144.0" stroke="#2C322C" stroke-width="1" stroke-dasharray="2 6"/>
-<text x="50" y="148.0" font-size="12" text-anchor="end" fill="#A9AFA7">20</text>
+<text x="50" y="148.0" font-size="12" text-anchor="end" fill="#A9AFA7">40</text>
 <text x="64.0" y="338" font-size="12" text-anchor="start" fill="#A9AFA7">Oct 19</text>
-<text x="768.0" y="338" font-size="12" text-anchor="end" fill="#A9AFA7">Oct 21</text>
-<polygon points="64.0,312.0 64.0,244.8 416.0,202.8 768.0,177.6 768.0,312.0" fill="url(#area)"/>
-<polyline points="64.0,270.0 416.0,244.8 768.0,177.6" fill="none" stroke="#A9AFA7" stroke-width="2" stroke-dasharray="5 4" stroke-linejoin="round"/>
-<polyline points="64.0,244.8 416.0,202.8 768.0,177.6" fill="none" stroke="#8FAE8B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="768.0" cy="177.6" r="4" fill="#A9AFA7" stroke="#161A16" stroke-width="2"/>
-<circle cx="768.0" cy="177.6" r="11" fill="#8FAE8B" fill-opacity="0.2"/>
-<circle cx="768.0" cy="177.6" r="5.5" fill="#8FAE8B" stroke="#161A16" stroke-width="2"/>
+<text x="768.0" y="338" font-size="12" text-anchor="end" fill="#A9AFA7">Oct 22</text>
+<polygon points="64.0,312.0 64.0,278.4 298.7,257.4 533.3,244.8 768.0,223.8 768.0,312.0" fill="url(#area)"/>
+<polyline points="64.0,291.0 298.7,278.4 533.3,244.8 768.0,223.8" fill="none" stroke="#A9AFA7" stroke-width="2" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<polyline points="64.0,278.4 298.7,257.4 533.3,244.8 768.0,223.8" fill="none" stroke="#8FAE8B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="768.0" cy="223.8" r="4" fill="#A9AFA7" stroke="#161A16" stroke-width="2"/>
+<circle cx="768.0" cy="223.8" r="11" fill="#8FAE8B" fill-opacity="0.2"/>
+<circle cx="768.0" cy="223.8" r="5.5" fill="#8FAE8B" stroke="#161A16" stroke-width="2"/>
 </svg>
