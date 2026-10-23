@@ -49,6 +49,12 @@
       A new version installs only when you tap Update. Interface in English and Russian.
     </td>
   </tr>
+  <tr>
+    <td colspan="3" valign="top">
+      <b>Your reading position syncs</b><br>
+      Read further on the reader, and the Yandex Books or Litres app on your phone opens the book at the same place — and the other way round. Automatically, with Wi-Fi on (experimental; more in <a href="#faq">FAQ</a>).
+    </td>
+  </tr>
 </table>
 
 <p align="center">
