@@ -269,14 +269,11 @@ Tested models:
 
 | Model | Firmware | Poklio | What was tested | Date | Tested by |
 |---|---|---|---|---|---|
-| PocketBook 628 Touch Lux 5 | — | — | Yandex Books: sign-in and reading books | 2026-10-23 | User |
-| PocketBook 740 InkPad 3 | — | — | Yandex Books: sign-in and reading books | 2026-10-23 | User |
-| PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.4.0 | Reading position sync with Yandex Books both ways, over-the-air update | 2026-10-22 | Author |
-| PocketBook X (PB1040) | U1040.6.5.1701 | 0.2.1 → 0.3.0 | Launch, signing in with a phone, My books and covers, getting and opening a book, search, over-the-air update, page-turn buttons | 2026-10-21–22 | User |
-| PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.1 | Books show up in the PocketBook library right away, over-the-air update | 2026-10-21 | Author |
-| PocketBook 634 Verse Pro Color (PB634K3) | 6.10 | 0.2 | Litres: sign-in, My books, downloading purchased books | 2026-10-21 | User |
-| PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.0 | Yandex Books and Litres, several libraries at once, over-the-air update | 2026-10-21 | Author |
-| PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.1.1 | All features, dark mode, over-the-air update | 2026-10-19 | Author |
+| PocketBook 628 Touch Lux 5 | — | — | Yandex Books: sign-in and reading | 2026-10-23 | User |
+| PocketBook 740 InkPad 3 | — | — | Yandex Books: sign-in and reading | 2026-10-23 | User |
+| PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.1.1 → 0.4.0 | All features: Yandex Books and Litres, reading position sync both ways, dark mode, over-the-air update | 2026-10-19–22 | Author |
+| PocketBook X (PB1040) | U1040.6.5.1701 | 0.2.1 → 0.3.0 | Signing in with a phone, getting and opening books, covers, search, over-the-air update, page-turn buttons | 2026-10-21–22 | User |
+| PocketBook 634 Verse Pro Color (PB634K3) | 6.10 | 0.2 | Litres: sign-in, downloading purchased books | 2026-10-21 | User |
 | PocketBook 700 Era (PB700) | U700.6.8.4183 | 0.1.1 | Launch and everyday use | 2026-10-19 | User |
 
 Poklio most likely works on other touchscreen PocketBook readers with firmware 6.8 or later, but it hasn't been tested on them yet. If you try it on your reader, [send a device report](https://github.com/ArkHak/poklio/issues/new?template=device-report.yml) and it will be added to this table.
