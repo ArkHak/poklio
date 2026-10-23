@@ -211,6 +211,17 @@ rm /Volumes/PB700K3/applications/icons/._*
 The file gives access to your account: don't share it, and delete it from your computer.
 </details>
 
+## Kindle — experimental
+
+Poklio also runs on Kindle — Paperwhite 5 and 6, Kindle 11, Oasis 3 and other models with firmware 5.12 or later. Books open in KOReader, because the built-in Kindle reader can't open EPUB.
+
+1. **Jailbreak.** A Kindle runs third-party apps only after a jailbreak. It's an unofficial modification that you do yourself, at your own risk. The wizard at [kindlemodding.org](https://kindlemodding.org/jailbreaking/) tells you which method fits your model and firmware; Hotfix and KUAL are installed along with it.
+2. **KOReader.** Install it following the [kindlemodding.org guide](https://kindlemodding.org/jailbreaking/post-jailbreak/koreader.html).
+3. **Poklio.** Download `poklio-kindle-<version>.zip` from the [release page](https://github.com/ArkHak/poklio/releases/latest) and unzip it on your computer. Connect your Kindle with a cable and copy the `extensions` and `documents` folders from the archive to the root of the Kindle storage, replacing files if asked. Disconnect the cable.
+4. **Open it.** "Poklio" appears in your Kindle library — tap it like a book. Poklio is also in the KUAL menu. To exit, tap Menu → Close Poklio.
+
+Connect to Wi-Fi in the Kindle settings first: Poklio turns Wi-Fi on by itself, but you can only pick a new network in the settings. Downloaded books are in the `documents/Poklio` folder, and your reading progress in KOReader goes to Yandex Books and Litres. Updates come over Wi-Fi, just like on PocketBook. Don't update the Kindle firmware after the jailbreak: a new version may close it.
+
 ## Security
 
 <table>
@@ -258,6 +269,8 @@ Tested models:
 
 | Model | Firmware | Poklio | What was tested | Date | Tested by |
 |---|---|---|---|---|---|
+| PocketBook 628 Touch Lux 5 | — | — | Yandex Books: sign-in and reading books | 2026-10-23 | User |
+| PocketBook 740 InkPad 3 | — | — | Yandex Books: sign-in and reading books | 2026-10-23 | User |
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.4.0 | Reading position sync with Yandex Books both ways, over-the-air update | 2026-10-22 | Author |
 | PocketBook X (PB1040) | U1040.6.5.1701 | 0.2.1 → 0.3.0 | Launch, signing in with a phone, My books and covers, getting and opening a book, search, over-the-air update, page-turn buttons | 2026-10-21–22 | User |
 | PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.2.1 | Books show up in the PocketBook library right away, over-the-air update | 2026-10-21 | Author |
