@@ -271,7 +271,7 @@ Tested models:
 |---|---|---|---|---|---|
 | PocketBook 628 Touch Lux 5 | — | — | Yandex Books: sign-in and reading | 2026-10-23 | User |
 | PocketBook 740 InkPad 3 | — | — | Yandex Books: sign-in and reading | 2026-10-23 | User |
-| PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.1.1 → 0.4.0 | All features: Yandex Books and Litres, reading position sync both ways, dark mode, over-the-air update | 2026-10-19–22 | Author |
+| PocketBook 700 Era Color (PB700K3) | U700k3.6.10.2359 | 0.1.1 → 0.4.1 | All features: Yandex Books and Litres, reading position sync with both, both ways, home page, dark mode, over-the-air update | 2026-10-19–24 | Author |
 | PocketBook X (PB1040) | U1040.6.5.1701 | 0.2.1 → 0.3.0 | Signing in with a phone, getting and opening books, covers, search, over-the-air update, page-turn buttons | 2026-10-21–22 | User |
 | PocketBook 634 Verse Pro Color (PB634K3) | 6.10 | 0.2 | Litres: sign-in, downloading purchased books | 2026-10-21 | User |
 | PocketBook 700 Era (PB700) | U700.6.8.4183 | 0.1.1 | Launch and everyday use | 2026-10-19 | User |
@@ -302,13 +302,15 @@ If the new version won't start, connect the reader over USB and copy `system/sta
 <details>
 <summary><b>Does my reading position sync?</b></summary>
 
-Yes, for Yandex Books, both ways (experimental). Read further on the reader, and the app on your phone opens the book at the same place. Read further on your phone, and the reader's built-in reader opens the book where you stopped. On the shelf and on the book page you see “Read N%”.
+Yes, for Yandex Books and Litres, both ways (experimental). Read further on the reader, and the app on your phone opens the book at the same place. Read further on your phone, and the reader's built-in reader opens the book where you stopped. On the shelf and on the book page you see “Read N%”. When you open the book, Litres may ask whether to continue from where you read on another device (Poklio) — answer “Yes”.
 
-It all happens automatically, with no buttons: when Poklio opens and when you return to it from the reader, if Wi-Fi is on. After reading, the device takes a few seconds to reconnect to Wi-Fi, so the percentage may update a little later. Progress only moves forward: if you go back in a book, Poklio does not carry that place to the phone or the reader.
+It all happens automatically, with no buttons: when Poklio opens and when you return to it from the reader, if Wi-Fi is on. While it syncs, the header shows “Syncing…”; after reading, the device takes a few seconds to reconnect to Wi-Fi, so the percentage may update a little later. Progress only moves forward: if you go back in a book, Poklio does not carry that place to the phone or the reader.
+
+It works best when you open books from Poklio — from the shelf or the book page: after reading you come back to Poklio, and the place syncs right away. If you open a book from the reader's library, the place syncs the next time Poklio starts.
 
 The “Sync progress” button on the book page is a fallback to sync right away, for example if Wi-Fi was off. You don't need to press it.
 
-Only books put on the shelf through Poklio are synced. Litres: the book page shows how far you have read in the Litres app, but the place is not carried between the reader and the phone. WB Books: no sync yet. Proper sync for Litres and WB Books will be added later.
+Only books put on the shelf through Poklio are synced. WB Books: no sync yet.
 </details>
 
 <details>
