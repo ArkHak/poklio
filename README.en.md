@@ -4,7 +4,7 @@
   <img src="images/hero-en.png" alt="Poklio — your libraries, your reader" width="100%">
 </p>
 
-<h3 align="center">Books from your libraries, on your PocketBook. Over Wi-Fi, no computer needed.</h3>
+<h3 align="center">Books from your libraries, on your PocketBook or Kindle. Over Wi-Fi, no computer needed.</h3>
 
 <p align="center">
   <a href="https://github.com/ArkHak/poklio/releases/latest"><img src="https://img.shields.io/github/v/release/ArkHak/poklio?label=download&style=for-the-badge&color=526B50" alt="Download"></a>
@@ -89,6 +89,8 @@ An estimate: downloads of the app from the releases page, not counting over-the-
     </td>
   </tr>
 </table>
+
+On Kindle, installation is different — see [Kindle — experimental](#kindle--experimental).
 
 You'll need Wi-Fi and a Yandex Books or WB Books account with a subscription, or a Litres account with purchased books. To sign in with a phone, your phone and reader must be on the same network.
 
@@ -217,6 +219,19 @@ rm /Volumes/PB700K3/applications/icons/._*
 The file gives access to your account: don't share it, and delete it from your computer.
 </details>
 
+## Kindle — experimental
+
+Poklio also runs on Kindle — Paperwhite 5 and 6, Kindle 11, Oasis 3 and other models with firmware 5.12 or later. Books open in KOReader, because the built-in Kindle reader can't open EPUB.
+
+Release 0.5.0 hasn't been tested on Kindle devices yet. If something doesn't work, [report a bug](https://github.com/ArkHak/poklio/issues/new?template=bug-report.yml) and attach the log: turn on Diagnostic log in Settings, repeat the problem and tap Settings → Send the log.
+
+1. **Jailbreak.** A Kindle runs third-party apps only after a jailbreak. It's an unofficial modification that you do yourself, at your own risk. The wizard at [kindlemodding.org](https://kindlemodding.org/jailbreaking/) tells you which method fits your model and firmware; Hotfix and KUAL are installed along with it.
+2. **KOReader.** Install it following the [kindlemodding.org guide](https://kindlemodding.org/jailbreaking/post-jailbreak/koreader.html).
+3. **Poklio.** Download `poklio-kindle-<version>.zip` from the [release page](https://github.com/ArkHak/poklio/releases/latest) and unzip it on your computer. Connect your Kindle with a cable and copy the `extensions` and `documents` folders from the archive to the root of the Kindle storage, replacing files if asked. Disconnect the cable.
+4. **Open it.** "Poklio" appears in your Kindle library — tap it like a book. Poklio is also in the KUAL menu. To exit, tap Menu → Close Poklio.
+
+Connect to Wi-Fi in the Kindle settings first: Poklio turns Wi-Fi on by itself, but you can only pick a new network in the settings. Downloaded books are in the `documents/Poklio` folder, and your reading progress in KOReader goes to Yandex Books and Litres. Updates come over Wi-Fi, just like on PocketBook. Don't update the Kindle firmware after the jailbreak: a new version may close it.
+
 ## Security
 
 <table>
@@ -258,7 +273,7 @@ No. Poklio only gets books your account can read in full, and it doesn't bypass 
 <details>
 <summary><b>Which readers does it work on?</b></summary>
 
-It needs firmware 6.8 or later. Poklio 0.1.0 didn't start on firmware 6.8 — fixed in 0.1.1. A user report confirms it also starts and works on firmware 6.5 (PocketBook X).
+It needs firmware 6.8 or later. Poklio 0.1.0 didn't start on firmware 6.8 — fixed in 0.1.1. A user report confirms it also starts and works on firmware 6.5 (PocketBook X). Since 0.5.0 it also runs, experimentally, on firmware 5.x (for example, PocketBook 626 Plus); this hasn't been tested on a reader yet. Readers without a touch screen are controlled with buttons. For Kindle, see [Kindle — experimental](#kindle--experimental).
 
 Tested models:
 
@@ -270,8 +285,9 @@ Tested models:
 | PocketBook X (PB1040) | U1040.6.5.1701 | 0.2.1 → 0.3.0 | Signing in with a phone, getting and opening books, covers, search, over-the-air update, page-turn buttons | 2026-10-21–22 | User |
 | PocketBook 634 Verse Pro Color (PB634K3) | 6.10 | 0.2 | Litres: sign-in, downloading purchased books | 2026-10-21 | User |
 | PocketBook 700 Era (PB700) | U700.6.8.4183 | 0.1.1 | Launch and everyday use | 2026-10-19 | User |
+| PocketBook 617 Basic Lux 3 (no touch screen) | — | 0.5.0 test build | Button control, reading position sync | 2026-10-29 | User |
 
-Poklio most likely works on other touchscreen PocketBook readers with firmware 6.8 or later, but it hasn't been tested on them yet. If you try it on your reader, [send a device report](https://github.com/ArkHak/poklio/issues/new?template=device-report.yml) and it will be added to this table.
+Poklio most likely works on other PocketBook readers with firmware 6.8 or later, but it hasn't been tested on them yet. If you try it on your reader, [send a device report](https://github.com/ArkHak/poklio/issues/new?template=device-report.yml) and it will be added to this table.
 </details>
 
 <details>
