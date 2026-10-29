@@ -301,9 +301,11 @@ Yes, for Yandex Books and Litres, both ways (experimental). Read further on the 
 
 It all happens automatically, with no buttons: when Poklio opens and when you return to it from the reader, if Wi-Fi is on. While it syncs, the header shows “Syncing…”; after reading, the device takes a few seconds to reconnect to Wi-Fi, so the percentage may update a little later. Progress only moves forward: if you go back in a book, Poklio does not carry that place to the phone or the reader.
 
-It works best when you open books from Poklio — from the shelf or the book page: after reading you come back to Poklio, and the place syncs right away. If you open a book from the reader's library, the place syncs the next time Poklio starts.
+It works best when you open books from Poklio — from the shelf or the book page: after reading you come back to Poklio, and the place syncs right away. If you open a book from the reader's library, the place syncs the next time Poklio starts. A book page on the shelf syncs the place as soon as you open it — Open waits for the sync.
 
 The “Sync progress” button on the book page is a fallback to sync right away, for example if Wi-Fi was off. You don't need to press it.
+
+The percentage on the reader and in the service app may differ by 1 % — that's not a bug: the service computes the percentage itself, from its own copy of the book, while the reading position is the same. For the same reason the phone may open the book a page earlier than the reader: Poklio sends the start of the reader's page, and the app shows its own page that contains that place.
 
 Only books put on the shelf through Poklio are synced. WB Books: no sync yet.
 </details>
@@ -320,7 +322,7 @@ Only books put on the shelf through Poklio are synced. WB Books: no sync yet.
 <details>
 <summary><b>Found a bug?</b></summary>
 
-[Report a bug](https://github.com/ArkHak/poklio/issues/new?template=bug-report.yml) with your reader model, firmware version, Poklio version (Settings → About) and what happened. A log helps: turn on Diagnostic log in Settings, repeat the problem and attach `poklio/poklio.log` from the reader. It contains no passwords or sign-in data.
+[Report a bug](https://github.com/ArkHak/poklio/issues/new?template=bug-report.yml) with your reader model, firmware version, Poklio version (Settings → About) and what happened. A log helps: turn on Diagnostic log in Settings, repeat the problem and tap Settings → Send the log — the reader shows a QR code, and your phone downloads the file over the same Wi-Fi network. If you have no phone at hand, attach `poklio/poklio.log` from the reader over USB. It contains no passwords or sign-in data.
 </details>
 
 ---
