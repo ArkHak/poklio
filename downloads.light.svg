@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-label="154 установки" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-label="159 установок" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
 <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#526B50" stop-opacity="0.32"/><stop offset="1" stop-color="#526B50" stop-opacity="0"/></linearGradient></defs>
 <rect x="0.5" y="0.5" width="799" height="359" rx="16" fill="#F5F3EC" stroke="#DDE2D8"/>
-<text x="32" y="80" fill="#202420"><tspan font-size="56" font-weight="700" letter-spacing="-1">154</tspan><tspan dx="12" font-size="22" font-weight="600">установки</tspan></text>
-<text x="32" y="110" font-size="14" fill="#616760">без учёта обновлений по воздуху · обновлено 5 ноя 2026</text>
+<text x="32" y="80" fill="#202420"><tspan font-size="56" font-weight="700" letter-spacing="-1">159</tspan><tspan dx="12" font-size="22" font-weight="600">установок</tspan></text>
+<text x="32" y="110" font-size="14" fill="#616760">без учёта обновлений по воздуху · обновлено 6 ноя 2026</text>
 <rect x="504" y="32" width="264" height="32" rx="16" fill="#EAEDE5"/>
 <line x1="520" y1="48" x2="540" y2="48" stroke="#526B50" stroke-width="3" stroke-linecap="round"/>
 <text x="550" y="53" font-size="13" fill="#616760">установки</text>
-<text x="752" y="53" font-size="14" font-weight="700" text-anchor="end" fill="#202420">154</text>
+<text x="752" y="53" font-size="14" font-weight="700" text-anchor="end" fill="#202420">159</text>
 <rect x="504" y="72" width="264" height="32" rx="16" fill="#EAEDE5"/>
 <line x1="520" y1="88" x2="540" y2="88" stroke="#616760" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 4"/>
 <text x="550" y="93" font-size="13" fill="#616760">обновления по воздуху</text>
-<text x="752" y="93" font-size="14" font-weight="700" text-anchor="end" fill="#202420">101</text>
+<text x="752" y="93" font-size="14" font-weight="700" text-anchor="end" fill="#202420">103</text>
 <line x1="64" y1="312.0" x2="768" y2="312.0" stroke="#DDE2D8" stroke-width="1"/>
 <text x="50" y="316.0" font-size="12" text-anchor="end" fill="#616760">0</text>
 <line x1="64" y1="270.0" x2="768" y2="270.0" stroke="#DDE2D8" stroke-width="1" stroke-dasharray="2 6"/>
@@ -22,12 +22,12 @@
 <line x1="64" y1="144.0" x2="768" y2="144.0" stroke="#DDE2D8" stroke-width="1" stroke-dasharray="2 6"/>
 <text x="50" y="148.0" font-size="12" text-anchor="end" fill="#616760">200</text>
 <text x="64.0" y="338" font-size="12" text-anchor="start" fill="#616760">19 окт</text>
-<text x="395.3" y="338" font-size="12" text-anchor="middle" fill="#616760">27 окт</text>
-<text x="768.0" y="338" font-size="12" text-anchor="end" fill="#616760">5 ноя</text>
-<polygon points="64.0,312.0 64.0,305.3 105.4,301.1 146.8,298.6 188.2,292.7 229.6,271.7 271.1,262.4 312.5,244.8 353.9,235.6 395.3,224.6 436.7,220.4 478.1,216.2 519.5,216.2 560.9,205.3 602.4,202.8 643.8,198.6 685.2,195.2 726.6,186.8 768.0,182.6 768.0,312.0" fill="url(#area)"/>
-<polyline points="64.0,307.8 105.4,305.3 146.8,298.6 188.2,290.2 229.6,286.8 271.1,280.9 312.5,278.4 353.9,275.9 395.3,268.3 436.7,266.6 478.1,245.6 519.5,238.1 560.9,233.0 602.4,231.4 643.8,229.7 685.2,229.7 726.6,227.2 768.0,227.2" fill="none" stroke="#616760" stroke-width="2" stroke-dasharray="5 4" stroke-linejoin="round"/>
-<polyline points="64.0,305.3 105.4,301.1 146.8,298.6 188.2,292.7 229.6,271.7 271.1,262.4 312.5,244.8 353.9,235.6 395.3,224.6 436.7,220.4 478.1,216.2 519.5,216.2 560.9,205.3 602.4,202.8 643.8,198.6 685.2,195.2 726.6,186.8 768.0,182.6" fill="none" stroke="#526B50" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="768.0" cy="227.2" r="4" fill="#616760" stroke="#F5F3EC" stroke-width="2"/>
-<circle cx="768.0" cy="182.6" r="11" fill="#526B50" fill-opacity="0.2"/>
-<circle cx="768.0" cy="182.6" r="5.5" fill="#526B50" stroke="#F5F3EC" stroke-width="2"/>
+<text x="416.0" y="338" font-size="12" text-anchor="middle" fill="#616760">28 окт</text>
+<text x="768.0" y="338" font-size="12" text-anchor="end" fill="#616760">6 ноя</text>
+<polygon points="64.0,312.0 64.0,305.3 103.1,301.1 142.2,298.6 181.3,292.7 220.4,271.7 259.6,262.4 298.7,244.8 337.8,235.6 376.9,224.6 416.0,220.4 455.1,216.2 494.2,216.2 533.3,205.3 572.4,202.8 611.6,198.6 650.7,195.2 689.8,186.8 728.9,182.6 768.0,178.4 768.0,312.0" fill="url(#area)"/>
+<polyline points="64.0,307.8 103.1,305.3 142.2,298.6 181.3,290.2 220.4,286.8 259.6,280.9 298.7,278.4 337.8,275.9 376.9,268.3 416.0,266.6 455.1,245.6 494.2,238.1 533.3,233.0 572.4,231.4 611.6,229.7 650.7,229.7 689.8,227.2 728.9,227.2 768.0,225.5" fill="none" stroke="#616760" stroke-width="2" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<polyline points="64.0,305.3 103.1,301.1 142.2,298.6 181.3,292.7 220.4,271.7 259.6,262.4 298.7,244.8 337.8,235.6 376.9,224.6 416.0,220.4 455.1,216.2 494.2,216.2 533.3,205.3 572.4,202.8 611.6,198.6 650.7,195.2 689.8,186.8 728.9,182.6 768.0,178.4" fill="none" stroke="#526B50" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="768.0" cy="225.5" r="4" fill="#616760" stroke="#F5F3EC" stroke-width="2"/>
+<circle cx="768.0" cy="178.4" r="11" fill="#526B50" fill-opacity="0.2"/>
+<circle cx="768.0" cy="178.4" r="5.5" fill="#526B50" stroke="#F5F3EC" stroke-width="2"/>
 </svg>
