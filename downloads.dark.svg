@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-label="163 установки" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-label="165 установок" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
 <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FAE8B" stop-opacity="0.32"/><stop offset="1" stop-color="#8FAE8B" stop-opacity="0"/></linearGradient></defs>
 <rect x="0.5" y="0.5" width="799" height="359" rx="16" fill="#161A16" stroke="#2C322C"/>
-<text x="32" y="80" fill="#F5F3EC"><tspan font-size="56" font-weight="700" letter-spacing="-1">163</tspan><tspan dx="12" font-size="22" font-weight="600">установки</tspan></text>
-<text x="32" y="110" font-size="14" fill="#A9AFA7">без учёта обновлений по воздуху · обновлено 9 ноя 2026</text>
+<text x="32" y="80" fill="#F5F3EC"><tspan font-size="56" font-weight="700" letter-spacing="-1">165</tspan><tspan dx="12" font-size="22" font-weight="600">установок</tspan></text>
+<text x="32" y="110" font-size="14" fill="#A9AFA7">без учёта обновлений по воздуху · обновлено 10 ноя 2026</text>
 <rect x="504" y="32" width="264" height="32" rx="16" fill="#202620"/>
 <line x1="520" y1="48" x2="540" y2="48" stroke="#8FAE8B" stroke-width="3" stroke-linecap="round"/>
 <text x="550" y="53" font-size="13" fill="#A9AFA7">установки</text>
-<text x="752" y="53" font-size="14" font-weight="700" text-anchor="end" fill="#F5F3EC">163</text>
+<text x="752" y="53" font-size="14" font-weight="700" text-anchor="end" fill="#F5F3EC">165</text>
 <rect x="504" y="72" width="264" height="32" rx="16" fill="#202620"/>
 <line x1="520" y1="88" x2="540" y2="88" stroke="#A9AFA7" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 4"/>
 <text x="550" y="93" font-size="13" fill="#A9AFA7">обновления по воздуху</text>
@@ -22,12 +22,12 @@
 <line x1="64" y1="144.0" x2="768" y2="144.0" stroke="#2C322C" stroke-width="1" stroke-dasharray="2 6"/>
 <text x="50" y="148.0" font-size="12" text-anchor="end" fill="#A9AFA7">200</text>
 <text x="64.0" y="338" font-size="12" text-anchor="start" fill="#A9AFA7">19 окт</text>
-<text x="399.2" y="338" font-size="12" text-anchor="middle" fill="#A9AFA7">29 окт</text>
-<text x="768.0" y="338" font-size="12" text-anchor="end" fill="#A9AFA7">9 ноя</text>
-<polygon points="64.0,312.0 64.0,305.3 97.5,301.1 131.0,298.6 164.6,292.7 198.1,271.7 231.6,262.4 265.1,244.8 298.7,235.6 332.2,224.6 365.7,220.4 399.2,216.2 432.8,216.2 466.3,205.3 499.8,202.8 533.3,198.6 566.9,195.2 600.4,186.8 633.9,182.6 667.4,178.4 701.0,177.6 734.5,176.8 768.0,175.1 768.0,312.0" fill="url(#area)"/>
-<polyline points="64.0,307.8 97.5,305.3 131.0,298.6 164.6,290.2 198.1,286.8 231.6,280.9 265.1,278.4 298.7,275.9 332.2,268.3 365.7,266.6 399.2,245.6 432.8,238.1 466.3,233.0 499.8,231.4 533.3,229.7 566.9,229.7 600.4,227.2 633.9,227.2 667.4,225.5 701.0,224.6 734.5,219.6 768.0,218.8" fill="none" stroke="#A9AFA7" stroke-width="2" stroke-dasharray="5 4" stroke-linejoin="round"/>
-<polyline points="64.0,305.3 97.5,301.1 131.0,298.6 164.6,292.7 198.1,271.7 231.6,262.4 265.1,244.8 298.7,235.6 332.2,224.6 365.7,220.4 399.2,216.2 432.8,216.2 466.3,205.3 499.8,202.8 533.3,198.6 566.9,195.2 600.4,186.8 633.9,182.6 667.4,178.4 701.0,177.6 734.5,176.8 768.0,175.1" fill="none" stroke="#8FAE8B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="416.0" y="338" font-size="12" text-anchor="middle" fill="#A9AFA7">30 окт</text>
+<text x="768.0" y="338" font-size="12" text-anchor="end" fill="#A9AFA7">10 ноя</text>
+<polygon points="64.0,312.0 64.0,305.3 96.0,301.1 128.0,298.6 160.0,292.7 192.0,271.7 224.0,262.4 256.0,244.8 288.0,235.6 320.0,224.6 352.0,220.4 384.0,216.2 416.0,216.2 448.0,205.3 480.0,202.8 512.0,198.6 544.0,195.2 576.0,186.8 608.0,182.6 640.0,178.4 672.0,177.6 704.0,176.8 736.0,175.1 768.0,173.4 768.0,312.0" fill="url(#area)"/>
+<polyline points="64.0,307.8 96.0,305.3 128.0,298.6 160.0,290.2 192.0,286.8 224.0,280.9 256.0,278.4 288.0,275.9 320.0,268.3 352.0,266.6 384.0,245.6 416.0,238.1 448.0,233.0 480.0,231.4 512.0,229.7 544.0,229.7 576.0,227.2 608.0,227.2 640.0,225.5 672.0,224.6 704.0,219.6 736.0,218.8 768.0,218.8" fill="none" stroke="#A9AFA7" stroke-width="2" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<polyline points="64.0,305.3 96.0,301.1 128.0,298.6 160.0,292.7 192.0,271.7 224.0,262.4 256.0,244.8 288.0,235.6 320.0,224.6 352.0,220.4 384.0,216.2 416.0,216.2 448.0,205.3 480.0,202.8 512.0,198.6 544.0,195.2 576.0,186.8 608.0,182.6 640.0,178.4 672.0,177.6 704.0,176.8 736.0,175.1 768.0,173.4" fill="none" stroke="#8FAE8B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="768.0" cy="218.8" r="4" fill="#A9AFA7" stroke="#161A16" stroke-width="2"/>
-<circle cx="768.0" cy="175.1" r="11" fill="#8FAE8B" fill-opacity="0.2"/>
-<circle cx="768.0" cy="175.1" r="5.5" fill="#8FAE8B" stroke="#161A16" stroke-width="2"/>
+<circle cx="768.0" cy="173.4" r="11" fill="#8FAE8B" fill-opacity="0.2"/>
+<circle cx="768.0" cy="173.4" r="5.5" fill="#8FAE8B" stroke="#161A16" stroke-width="2"/>
 </svg>
