@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-label="215 installs" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-label="221 installs" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
 <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FAE8B" stop-opacity="0.32"/><stop offset="1" stop-color="#8FAE8B" stop-opacity="0"/></linearGradient></defs>
 <rect x="0.5" y="0.5" width="799" height="359" rx="16" fill="#161A16" stroke="#2C322C"/>
-<text x="32" y="80" fill="#F5F3EC"><tspan font-size="56" font-weight="700" letter-spacing="-1">215</tspan><tspan dx="12" font-size="22" font-weight="600">installs</tspan></text>
-<text x="32" y="110" font-size="14" fill="#A9AFA7">not counting over-the-air updates · updated Nov 17 2026</text>
+<text x="32" y="80" fill="#F5F3EC"><tspan font-size="56" font-weight="700" letter-spacing="-1">221</tspan><tspan dx="12" font-size="22" font-weight="600">installs</tspan></text>
+<text x="32" y="110" font-size="14" fill="#A9AFA7">not counting over-the-air updates · updated Nov 18 2026</text>
 <rect x="504" y="32" width="264" height="32" rx="16" fill="#202620"/>
 <line x1="520" y1="48" x2="540" y2="48" stroke="#8FAE8B" stroke-width="3" stroke-linecap="round"/>
 <text x="550" y="53" font-size="13" fill="#A9AFA7">installs</text>
-<text x="752" y="53" font-size="14" font-weight="700" text-anchor="end" fill="#F5F3EC">215</text>
+<text x="752" y="53" font-size="14" font-weight="700" text-anchor="end" fill="#F5F3EC">221</text>
 <rect x="504" y="72" width="264" height="32" rx="16" fill="#202620"/>
 <line x1="520" y1="88" x2="540" y2="88" stroke="#A9AFA7" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 4"/>
 <text x="550" y="93" font-size="13" fill="#A9AFA7">over-the-air updates</text>
-<text x="752" y="93" font-size="14" font-weight="700" text-anchor="end" fill="#F5F3EC">113</text>
+<text x="752" y="93" font-size="14" font-weight="700" text-anchor="end" fill="#F5F3EC">114</text>
 <line x1="64" y1="312.0" x2="768" y2="312.0" stroke="#2C322C" stroke-width="1"/>
 <text x="50" y="316.0" font-size="12" text-anchor="end" fill="#A9AFA7">0</text>
 <line x1="64" y1="270.0" x2="768" y2="270.0" stroke="#2C322C" stroke-width="1" stroke-dasharray="2 6"/>
@@ -22,12 +22,12 @@
 <line x1="64" y1="144.0" x2="768" y2="144.0" stroke="#2C322C" stroke-width="1" stroke-dasharray="2 6"/>
 <text x="50" y="148.0" font-size="12" text-anchor="end" fill="#A9AFA7">400</text>
 <text x="64.0" y="338" font-size="12" text-anchor="start" fill="#A9AFA7">Oct 19</text>
-<text x="403.9" y="338" font-size="12" text-anchor="middle" fill="#A9AFA7">Nov 2</text>
-<text x="768.0" y="338" font-size="12" text-anchor="end" fill="#A9AFA7">Nov 17</text>
-<polygon points="64.0,312.0 64.0,308.6 88.3,306.5 112.6,305.3 136.8,302.3 161.1,291.8 185.4,287.2 209.7,278.4 233.9,273.8 258.2,268.3 282.5,266.2 306.8,264.1 331.0,264.1 355.3,258.7 379.6,257.4 403.9,255.3 428.1,253.6 452.4,249.4 476.7,247.3 501.0,245.2 525.2,244.8 549.5,244.4 573.8,243.5 598.1,242.7 622.3,241.0 646.6,237.2 670.9,234.7 695.2,233.5 719.4,231.4 743.7,225.9 768.0,221.7 768.0,312.0" fill="url(#area)"/>
-<polyline points="64.0,309.9 88.3,308.6 112.6,305.3 136.8,301.1 161.1,299.4 185.4,296.5 209.7,295.2 233.9,293.9 258.2,290.2 282.5,289.3 306.8,278.8 331.0,275.0 355.3,272.5 379.6,271.7 403.9,270.8 428.1,270.8 452.4,269.6 476.7,269.6 501.0,268.7 525.2,268.3 549.5,265.8 573.8,265.4 598.1,265.4 622.3,265.4 646.6,265.4 670.9,265.0 695.2,265.0 719.4,264.5 743.7,264.5 768.0,264.5" fill="none" stroke="#A9AFA7" stroke-width="2" stroke-dasharray="5 4" stroke-linejoin="round"/>
-<polyline points="64.0,308.6 88.3,306.5 112.6,305.3 136.8,302.3 161.1,291.8 185.4,287.2 209.7,278.4 233.9,273.8 258.2,268.3 282.5,266.2 306.8,264.1 331.0,264.1 355.3,258.7 379.6,257.4 403.9,255.3 428.1,253.6 452.4,249.4 476.7,247.3 501.0,245.2 525.2,244.8 549.5,244.4 573.8,243.5 598.1,242.7 622.3,241.0 646.6,237.2 670.9,234.7 695.2,233.5 719.4,231.4 743.7,225.9 768.0,221.7" fill="none" stroke="#8FAE8B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="768.0" cy="264.5" r="4" fill="#A9AFA7" stroke="#161A16" stroke-width="2"/>
-<circle cx="768.0" cy="221.7" r="11" fill="#8FAE8B" fill-opacity="0.2"/>
-<circle cx="768.0" cy="221.7" r="5.5" fill="#8FAE8B" stroke="#161A16" stroke-width="2"/>
+<text x="416.0" y="338" font-size="12" text-anchor="middle" fill="#A9AFA7">Nov 3</text>
+<text x="768.0" y="338" font-size="12" text-anchor="end" fill="#A9AFA7">Nov 18</text>
+<polygon points="64.0,312.0 64.0,308.6 87.5,306.5 110.9,305.3 134.4,302.3 157.9,291.8 181.3,287.2 204.8,278.4 228.3,273.8 251.7,268.3 275.2,266.2 298.7,264.1 322.1,264.1 345.6,258.7 369.1,257.4 392.5,255.3 416.0,253.6 439.5,249.4 462.9,247.3 486.4,245.2 509.9,244.8 533.3,244.4 556.8,243.5 580.3,242.7 603.7,241.0 627.2,237.2 650.7,234.7 674.1,233.5 697.6,231.4 721.1,225.9 744.5,221.7 768.0,219.2 768.0,312.0" fill="url(#area)"/>
+<polyline points="64.0,309.9 87.5,308.6 110.9,305.3 134.4,301.1 157.9,299.4 181.3,296.5 204.8,295.2 228.3,293.9 251.7,290.2 275.2,289.3 298.7,278.8 322.1,275.0 345.6,272.5 369.1,271.7 392.5,270.8 416.0,270.8 439.5,269.6 462.9,269.6 486.4,268.7 509.9,268.3 533.3,265.8 556.8,265.4 580.3,265.4 603.7,265.4 627.2,265.4 650.7,265.0 674.1,265.0 697.6,264.5 721.1,264.5 744.5,264.5 768.0,264.1" fill="none" stroke="#A9AFA7" stroke-width="2" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<polyline points="64.0,308.6 87.5,306.5 110.9,305.3 134.4,302.3 157.9,291.8 181.3,287.2 204.8,278.4 228.3,273.8 251.7,268.3 275.2,266.2 298.7,264.1 322.1,264.1 345.6,258.7 369.1,257.4 392.5,255.3 416.0,253.6 439.5,249.4 462.9,247.3 486.4,245.2 509.9,244.8 533.3,244.4 556.8,243.5 580.3,242.7 603.7,241.0 627.2,237.2 650.7,234.7 674.1,233.5 697.6,231.4 721.1,225.9 744.5,221.7 768.0,219.2" fill="none" stroke="#8FAE8B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="768.0" cy="264.1" r="4" fill="#A9AFA7" stroke="#161A16" stroke-width="2"/>
+<circle cx="768.0" cy="219.2" r="11" fill="#8FAE8B" fill-opacity="0.2"/>
+<circle cx="768.0" cy="219.2" r="5.5" fill="#8FAE8B" stroke="#161A16" stroke-width="2"/>
 </svg>
